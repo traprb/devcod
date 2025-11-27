@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 entry.target.style.transform = 'translateY(0)';
             }
         });
-    }, { threshold: 0.1 }); // Dispara quando 10% do item aparece
+    }, { threshold: 0.1 });
 
     const elements = document.querySelectorAll('.bento-card, .hero-title, .hero-subtitle, li, .faq-item');
     elements.forEach((el) => {
@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
     faqs.forEach(faq => {
         faq.addEventListener('click', () => {
             const item = faq.parentElement;
-            // Fecha outros abertos (opcional, para mobile é bom)
             document.querySelectorAll('.faq-item').forEach(i => {
                 if(i !== item) i.classList.remove('active');
             });
@@ -46,4 +45,17 @@ document.addEventListener('DOMContentLoaded', () => {
             window.open(`https://wa.me/5511968930203?text=${text}`, '_blank');
         });
     }
+
+    // 4. Lógica de Cookies
+    const cookieBanner = document.getElementById('cookie-banner');
+    const acceptBtn = document.getElementById('accept-cookies');
+
+    if (!localStorage.getItem('cookieConsent')) {
+        cookieBanner.classList.remove('hidden');
+    }
+
+    acceptBtn.addEventListener('click', () => {
+        localStorage.setItem('cookieConsent', 'true');
+        cookieBanner.classList.add('hidden');
+    });
 });
