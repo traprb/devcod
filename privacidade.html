@@ -3,49 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidade | Devcod Software</title>
+    <title>Termos de Uso e Privacidade | Devcod</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Estilos específicos para texto jurídico */
+        .legal-text { font-size: 0.9rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 15px; }
+        .legal-title { color: white; font-size: 1.1rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; }
+        .warning-box {
+            background: rgba(220, 38, 38, 0.1); 
+            border: 1px solid rgba(220, 38, 38, 0.3); 
+            padding: 15px; 
+            border-radius: 8px; 
+            margin-top: 15px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="container nav-flex">
             <a href="index.html" class="logo"><i class="fa-solid fa-code"></i> Devcod<span>.Software</span></a>
-            <a href="suporte.html" class="cta-header">Voltar</a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="suporte.html" class="cta-header">Falar com Consultor</a>
+            </nav>
         </div>
     </header>
 
     <main>
-        <section class="page-hero" style="padding-bottom:50px;">
+        <section class="page-hero">
             <div class="container">
-                <h1 class="hero-title">Política de Privacidade</h1>
-                <p class="hero-subtitle">Transparência total com seus dados.</p>
+                <div style="color:var(--accent); font-weight:700; letter-spacing:2px; text-transform:uppercase; font-size:0.8rem; margin-bottom:15px;">
+                    Jurídico & Compliance
+                </div>
+                <h1 class="hero-title">Segurança Jurídica e <span class="text-gradient">Transparência</span></h1>
+                <p class="hero-subtitle">Levamos nosso trabalho a sério. Abaixo, detalhamos nossos termos de serviço, políticas de cancelamento e proteção de dados conforme a legislação brasileira.</p>
             </div>
         </section>
 
-        <section class="container" style="padding-bottom:100px;">
-            <div class="card" style="line-height:1.8; color:var(--text-muted); max-width:800px; margin:0 auto;">
-                <h3>1. Sobre a Empresa</h3>
-                <p>A Devcod Software (CNPJ 51.419.528/0001-30) preza pela segurança dos dados de seus clientes.</p>
-                <br>
-                <h3>2. Coleta de Informações</h3>
-                <p>Coletamos apenas informações essenciais para o contato comercial (Nome, Telefone, E-mail e Dados da Empresa) fornecidos voluntariamente através de nossos formulários.</p>
-                <br>
-                <h3>3. Uso dos Dados</h3>
-                <p>Os dados são utilizados exclusivamente para:</p>
-                <ul style="padding-left:20px; margin-bottom:20px;">
-                    <li>- Elaboração de orçamentos e propostas;</li>
-                    <li>- Contato via WhatsApp ou E-mail para suporte;</li>
-                    <li>- Execução de contratos de serviço.</li>
-                </ul>
-                <h3>4. Segurança</h3>
-                <p>Seguimos rigorosos padrões de segurança digital e não compartilhamos seus dados com terceiros sem autorização.</p>
+        <section class="section-padding">
+            <div class="container">
+                <div class="bento-grid">
+                    
+                    <!-- CARD 1: CONTRATAÇÃO E PAGAMENTO -->
+                    <div class="bento-card" style="grid-column: span 1; border-color: var(--primary);">
+                        <h3 class="legal-title"><i class="fa-solid fa-file-signature" style="color:var(--primary)"></i> 1. Contratação e Pagamentos</h3>
+                        <p class="legal-text">
+                            A prestação de serviços pela <strong>Devcod Software (CNPJ 51.419.528/0001-30)</strong> é formalizada mediante contrato de prestação de serviços. O desenvolvimento inicia-se exclusivamente após a confirmação do pagamento da entrada (Sinal).
+                        </p>
+                        <p class="legal-text">
+                            <strong>Cláusula de Entrada:</strong> Trabalhamos com modelo de 50% de entrada para reserva de agenda e custos iniciais de servidor/setup.
+                        </p>
+                    </div>
+
+                    <!-- CARD 2: CANCELAMENTO E MULTA (IMPORTANTE) -->
+                    <div class="bento-card" style="grid-column: span 1; border-color: var(--accent);">
+                        <h3 class="legal-title"><i class="fa-solid fa-gavel" style="color:var(--accent)"></i> 2. Cancelamento e Desistência</h3>
+                        <p class="legal-text">
+                            Nosso tempo e expertise são recursos finitos. Ao contratar a Devcod, dedicamos horas de engenharia e reservamos infraestrutura para seu projeto.
+                        </p>
+                        <div class="warning-box">
+                            <strong style="color: #fca5a5; display:block; margin-bottom:5px;">LEI DO ARREPENDIMENTO E ARRAS:</strong>
+                            <p style="font-size:0.85rem; color: #fecaca; margin:0;">
+                                Em caso de desistência por parte do contratante após o pagamento do sinal, <strong>o valor da entrada NÃO será devolvido</strong>, servindo como indenização mínima pelos custos operacionais e reserva de agenda, conforme prevê o <strong>Art. 418 do Código Civil Brasileiro (Arras Penitenciais)</strong>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- CARD 3: PROPRIEDADE INTELECTUAL -->
+                    <div class="bento-card">
+                        <h3 class="legal-title"><i class="fa-solid fa-copyright" style="color:var(--success)"></i> 3. Propriedade Intelectual</h3>
+                        <p class="legal-text">
+                            Todo o código-fonte, design e estrutura desenvolvidos permanecem sob propriedade intelectual da Devcod Software até a <strong>quitação integral</strong> do valor do contrato, conforme a <strong>Lei de Software (Lei nº 9.609/98)</strong>.
+                        </p>
+                        <p class="legal-text">
+                            Tentativas de apropriação indébita, engenharia reversa ou uso do sistema sem o pagamento final acarretarão em bloqueio imediato do serviço e medidas judiciais cabíveis.
+                        </p>
+                    </div>
+
+                    <!-- CARD 4: MÁ FÉ E RESPONSABILIDADES -->
+                    <div class="bento-card">
+                        <h3 class="legal-title"><i class="fa-solid fa-shield-halved"></i> 4. Conduta e Má-Fé</h3>
+                        <p class="legal-text">
+                            A Devcod repudia qualquer tentativa de má-fé. Todos os nossos projetos possuem logs de acesso e contrato digital com validade jurídica.
+                        </p>
+                        <p class="legal-text">
+                            O não pagamento das parcelas acordadas resultará na suspensão imediata dos serviços (hospedagem, API e app) e inclusão do CNPJ/CPF do contratante nos órgãos de proteção ao crédito (SPC/Serasa) após 7 dias de atraso.
+                        </p>
+                    </div>
+
+                    <!-- CARD 5: LGPD -->
+                    <div class="bento-card">
+                        <h3 class="legal-title"><i class="fa-solid fa-user-lock"></i> 5. Dados e LGPD</h3>
+                        <p class="legal-text">
+                            Em conformidade com a <strong>Lei Geral de Proteção de Dados (Lei 13.709/2018)</strong>, garantimos que seus dados (e os dados dos seus clientes no sistema) são armazenados com criptografia de ponta a ponta.
+                        </p>
+                        <p class="legal-text">
+                            Não vendemos nem compartilhamos informações com terceiros. Utilizamos os dados estritamente para a execução do contrato e comunicação comercial.
+                        </p>
+                    </div>
+
+                    <!-- CARD 6: SUPORTE -->
+                    <div class="bento-card">
+                        <h3 class="legal-title"><i class="fa-solid fa-headset"></i> 6. Suporte e Garantia</h3>
+                        <p class="legal-text">
+                            Oferecemos garantia técnica sobre bugs e falhas de código pelo período estipulado em contrato (geralmente 30 a 90 dias após a entrega).
+                        </p>
+                        <p class="legal-text">
+                            A garantia não cobre: mau uso do sistema, alterações feitas por terceiros no código, ou problemas causados por provedores externos (ex: queda da AWS ou instabilidade do WhatsApp).
+                        </p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 50px; text-align: center;">
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">
+                        Ao contratar nossos serviços, o cliente declara estar ciente e de acordo com todas as cláusulas acima.
+                    </p>
+                    <div style="margin-top: 20px;">
+                        <a href="suporte.html" class="btn-primary" style="padding: 15px 40px;">
+                            <i class="fa-solid fa-check-double"></i> Concordar e Iniciar Projeto
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer><div class="container"><div class="legal">&copy; 2025 Devcod Software Todos os direitos reservados.</div></div></footer>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="logo">Devcod<span>.Software</span></div>
+                    <p style="color:var(--text-muted); font-size:0.9rem; margin-top:20px;">Segurança jurídica e excelência técnica.</p>
+                </div>
+                <div class="footer-links">
+                    <h4 style="font-size:1rem;">Institucional</h4>
+                    <a href="index.html">Home</a>
+                    <a href="sobre.html">Sobre Nós</a>
+                    <a href="suporte.html">Contato</a>
+                </div>
+                <div>
+                    <h4 style="font-size:1rem;">Contato Legal</h4>
+                    <p style="color:var(--text-muted); font-size:0.9rem;">(11) 96893-0203</p>
+                    <p style="color:var(--text-muted); font-size:0.9rem;">juridico@devcod.com</p>
+                    <p style="color:var(--text-muted); font-size:0.8rem; margin-top:10px;">CNPJ: 51.419.528/0001-30</p>
+                </div>
+            </div>
+            <div style="text-align:center; margin-top:50px; border-top:1px solid var(--border); padding-top:20px; font-size:0.8rem; color:var(--text-muted);">
+                &copy; 2025 Devcod Software. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
-
 </html>
