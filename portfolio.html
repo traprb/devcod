@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Devcod</title>
+    <title>Portfolio & Cases | Devcod</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -13,6 +13,10 @@
             <a href="index.html" class="logo"><i class="fa-solid fa-code"></i> Devcod<span>.Software</span></a>
             <nav class="nav-links">
                 <a href="index.html">Home</a>
+                <a href="mobile.html">Mobile</a>
+                <a href="web.html">Web</a>
+                <a href="landing.html">Landing</a>
+                <a href="ecommerce.html">E-commerce</a>
                 <a href="portfolio.html" class="active">Portfolio</a>
                 <a href="suporte.html">Contato</a>
             </nav>
@@ -23,57 +27,228 @@
     <main>
         <section class="page-hero">
             <div class="container">
-                <h1 class="hero-title">Cases de <span class="text-gradient">Sucesso</span></h1>
-                <p class="hero-subtitle">Resultados reais de quem confiou na Devcod.</p>
+                <div style="color:var(--accent); font-weight:700; letter-spacing:2px; text-transform:uppercase; font-size:0.8rem; margin-bottom:15px;">
+                    Track Record
+                </div>
+                <h1 class="hero-title">Resultados que <span class="text-gradient">Falam por Si</span></h1>
+                <p class="hero-subtitle">De startups a grandes corporações. Veja como nossa tecnologia transformou desafios complexos em lucro e eficiência operacional.</p>
             </div>
         </section>
 
+        <!-- SEÇÃO: ESTATÍSTICAS GLOBAIS -->
+        <section class="section-padding" style="padding-bottom: 0;">
+            <div class="container">
+                <div class="bento-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); text-align: center;">
+                    <div class="bento-card" style="padding: 20px;">
+                        <h3 style="font-size: 2.5rem; color: var(--success); margin: 0;">+150</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted);">Projetos Entregues</p>
+                    </div>
+                    <div class="bento-card" style="padding: 20px;">
+                        <h3 style="font-size: 2.5rem; color: var(--primary); margin: 0;">R$ 12M+</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted);">Transacionados em Nossos Apps</p>
+                    </div>
+                    <div class="bento-card" style="padding: 20px;">
+                        <h3 style="font-size: 2.5rem; color: var(--accent); margin: 0;">4 Anos</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-muted);">De Excelência Técnica</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: GRID DE PROJETOS -->
         <section class="section-padding">
             <div class="container">
+                <h2 style="margin-bottom: 40px; text-align: center;">Cases por Setor</h2>
                 <div class="bento-grid">
-                    <!-- Case 1 -->
+                    
+                    <!-- Case 1: Fintech -->
                     <div class="bento-card">
-                        <i class="fa-solid fa-building-columns" style="font-size:40px; color:var(--primary); margin-bottom:15px;"></i>
+                        <div class="bento-icon"><i class="fa-solid fa-building-columns"></i></div>
                         <h3>Fintech Prime</h3>
-                        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:15px;">Sistema de automação para financeira.</p>
+                        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:15px;">
+                            Sistema de automação de crédito. Otimizou a análise de risco e a esteira de aprovação de empréstimos.
+                        </p>
+                        <div style="display:flex; gap:10px; margin-bottom:15px; flex-wrap:wrap;">
+                            <span style="background:rgba(255,255,255,0.1); padding:5px 10px; border-radius:15px; font-size:0.7rem;">React</span>
+                            <span style="background:rgba(255,255,255,0.1); padding:5px 10px; border-radius:15px; font-size:0.7rem;">Node.js</span>
+                            <span style="background:rgba(255,255,255,0.1); padding:5px 10px; border-radius:15px; font-size:0.7rem;">AWS</span>
+                        </div>
                         <div style="border-top:1px solid var(--border); padding-top:10px;">
-                            <strong style="color:var(--success);">+40% Conversão</strong>
+                            <strong style="color:var(--success);"><i class="fa-solid fa-arrow-trend-up"></i> +40% na Conversão</strong>
                         </div>
                     </div>
-                    <!-- Case 2 -->
+
+                    <!-- Case 2: E-commerce -->
                     <div class="bento-card">
-                        <i class="fa-solid fa-shirt" style="font-size:40px; color:var(--primary); margin-bottom:15px;"></i>
+                        <div class="bento-icon"><i class="fa-solid fa-shirt"></i></div>
                         <h3>Moda Elite</h3>
-                        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:15px;">E-commerce com 5 mil produtos.</p>
+                        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:15px;">
+                            E-commerce de alto tráfego. Migração de plataforma com integração de ERP para controle de estoque em tempo real.
+                        </p>
+                        <div style="display:flex; gap:10px; margin-bottom:15px; flex-wrap:wrap;">
+                            <span style="background:rgba(255,255,255,0.1); padding:5px 10px; border-radius:15px; font-size:0.7rem;">Vtex IO</span>
+                            <span style="background:rgba(255,255,255,0.1); padding:5px 10px; border-radius:15px; font-size:0.7rem;">React</span>
+                        </div>
                         <div style="border-top:1px solid var(--border); padding-top:10px;">
-                            <strong style="color:var(--success);">10k Acessos/Mês</strong>
+                            <strong style="color:var(--success);"><i class="fa-solid fa-users"></i> 10k Acessos/Mês</strong>
                         </div>
                     </div>
-                    <!-- Case 3 -->
+
+                    <!-- Case 3: Delivery -->
                     <div class="bento-card">
-                        <i class="fa-solid fa-burger" style="font-size:40px; color:var(--primary); margin-bottom:15px;"></i>
-                        <h3>Burger Delivery</h3>
-                        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:15px;">App próprio de delivery.</p>
+                        <div class="bento-icon"><i class="fa-solid fa-burger"></i></div>
+                        <h3>Burger King (Franquia)</h3>
+                        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:15px;">
+                            App próprio de delivery para fugir das taxas de marketplaces. Programa de fidelidade integrado.
+                        </p>
+                        <div style="display:flex; gap:10px; margin-bottom:15px; flex-wrap:wrap;">
+                            <span style="background:rgba(255,255,255,0.1); padding:5px 10px; border-radius:15px; font-size:0.7rem;">Flutter</span>
+                            <span style="background:rgba(255,255,255,0.1); padding:5px 10px; border-radius:15px; font-size:0.7rem;">Firebase</span>
+                        </div>
                         <div style="border-top:1px solid var(--border); padding-top:10px;">
-                            <strong style="color:var(--success);">Zero Taxas de App</strong>
+                            <strong style="color:var(--success);"><i class="fa-solid fa-wallet"></i> Economia de R$ 15k/mês</strong>
                         </div>
                     </div>
-                    <!-- Case 4 -->
+
+                    <!-- Case 4: Advocacia -->
                     <div class="bento-card">
-                        <i class="fa-solid fa-gavel" style="font-size:40px; color:var(--primary); margin-bottom:15px;"></i>
+                        <div class="bento-icon"><i class="fa-solid fa-gavel"></i></div>
                         <h3>Advocacia Silva</h3>
-                        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:15px;">Site Institucional Otimizado.</p>
+                        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:15px;">
+                            Site Institucional focado em SEO e autoridade digital. Landing pages específicas para cada área do direito.
+                        </p>
+                        <div style="display:flex; gap:10px; margin-bottom:15px; flex-wrap:wrap;">
+                            <span style="background:rgba(255,255,255,0.1); padding:5px 10px; border-radius:15px; font-size:0.7rem;">WordPress</span>
+                            <span style="background:rgba(255,255,255,0.1); padding:5px 10px; border-radius:15px; font-size:0.7rem;">SEO</span>
+                        </div>
                         <div style="border-top:1px solid var(--border); padding-top:10px;">
-                            <strong style="color:var(--success);">Top 3 Google</strong>
+                            <strong style="color:var(--success);"><i class="fa-brands fa-google"></i> Top 3 no Google</strong>
+                        </div>
+                    </div>
+
+                    <!-- Case 5: Imobiliária -->
+                    <div class="bento-card">
+                        <div class="bento-icon"><i class="fa-solid fa-house-chimney"></i></div>
+                        <h3>Imob Luxo</h3>
+                        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:15px;">
+                            Portal imobiliário com tour virtual 360º e CRM integrado para corretores gerenciarem leads.
+                        </p>
+                        <div style="display:flex; gap:10px; margin-bottom:15px; flex-wrap:wrap;">
+                            <span style="background:rgba(255,255,255,0.1); padding:5px 10px; border-radius:15px; font-size:0.7rem;">Next.js</span>
+                            <span style="background:rgba(255,255,255,0.1); padding:5px 10px; border-radius:15px; font-size:0.7rem;">PostgreSQL</span>
+                        </div>
+                        <div style="border-top:1px solid var(--border); padding-top:10px;">
+                            <strong style="color:var(--success);"><i class="fa-solid fa-key"></i> +20 Vendas/Mês via Site</strong>
+                        </div>
+                    </div>
+
+                    <!-- Case 6: Logística -->
+                    <div class="bento-card">
+                        <div class="bento-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                        <h3>Logística Express</h3>
+                        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:15px;">
+                            Sistema de rastreamento de frota e app para motoristas com comprovante de entrega digital.
+                        </p>
+                        <div style="display:flex; gap:10px; margin-bottom:15px; flex-wrap:wrap;">
+                            <span style="background:rgba(255,255,255,0.1); padding:5px 10px; border-radius:15px; font-size:0.7rem;">React Native</span>
+                            <span style="background:rgba(255,255,255,0.1); padding:5px 10px; border-radius:15px; font-size:0.7rem;">Google Maps API</span>
+                        </div>
+                        <div style="border-top:1px solid var(--border); padding-top:10px;">
+                            <strong style="color:var(--success);"><i class="fa-solid fa-stopwatch"></i> Otimização de Rotas</strong>
+                        </div>
+                    </div>
+
+                    <!-- Case 7: Saúde -->
+                    <div class="bento-card">
+                        <div class="bento-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                        <h3>Clínica Vida</h3>
+                        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:15px;">
+                            Sistema de agendamento online e telemedicina. Prontuário eletrônico seguro.
+                        </p>
+                        <div style="display:flex; gap:10px; margin-bottom:15px; flex-wrap:wrap;">
+                            <span style="background:rgba(255,255,255,0.1); padding:5px 10px; border-radius:15px; font-size:0.7rem;">WebRTC</span>
+                            <span style="background:rgba(255,255,255,0.1); padding:5px 10px; border-radius:15px; font-size:0.7rem;">Security HIPPA</span>
+                        </div>
+                        <div style="border-top:1px solid var(--border); padding-top:10px;">
+                            <strong style="color:var(--success);"><i class="fa-solid fa-calendar-check"></i> Agenda 100% Cheia</strong>
+                        </div>
+                    </div>
+
+                     <!-- Case 8: Supermercado -->
+                     <div class="bento-card">
+                        <div class="bento-icon"><i class="fa-solid fa-basket-shopping"></i></div>
+                        <h3>Supermercado Bom Preço</h3>
+                        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:15px;">
+                            App de mercado online com clube de descontos e encarte digital interativo.
+                        </p>
+                        <div style="display:flex; gap:10px; margin-bottom:15px; flex-wrap:wrap;">
+                            <span style="background:rgba(255,255,255,0.1); padding:5px 10px; border-radius:15px; font-size:0.7rem;">PWA</span>
+                            <span style="background:rgba(255,255,255,0.1); padding:5px 10px; border-radius:15px; font-size:0.7rem;">Ionic</span>
+                        </div>
+                        <div style="border-top:1px solid var(--border); padding-top:10px;">
+                            <strong style="color:var(--success);"><i class="fa-solid fa-mobile"></i> 5.000 Downloads</strong>
+                        </div>
+                    </div>
+
+                    <!-- Case 9: Educação -->
+                    <div class="bento-card">
+                        <div class="bento-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h3>Educa EAD</h3>
+                        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:15px;">
+                            Plataforma de cursos online (LMS) com área de membros, quiz e emissão de certificados.
+                        </p>
+                        <div style="display:flex; gap:10px; margin-bottom:15px; flex-wrap:wrap;">
+                            <span style="background:rgba(255,255,255,0.1); padding:5px 10px; border-radius:15px; font-size:0.7rem;">Moodle</span>
+                            <span style="background:rgba(255,255,255,0.1); padding:5px 10px; border-radius:15px; font-size:0.7rem;">Vimeo API</span>
+                        </div>
+                        <div style="border-top:1px solid var(--border); padding-top:10px;">
+                            <strong style="color:var(--success);"><i class="fa-solid fa-users"></i> +1.500 Alunos</strong>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- CTA FINAL -->
+        <section class="section-padding" style="background: linear-gradient(180deg, var(--bg-dark) 0%, #1e1b4b 100%); border-top: 1px solid var(--border);">
+            <div class="container" style="text-align:center;">
+                <h2 style="font-size:2.5rem; margin-bottom:20px;">Sua empresa será o próximo Case?</h2>
+                <p style="color:var(--text-muted); font-size:1.1rem; max-width:600px; margin:0 auto 40px auto;">
+                    Temos a expertise técnica para resolver o seu problema, independente do nicho.
+                </p>
+                <div style="display:flex; justify-content:center; gap:20px;">
+                    <a href="suporte.html" class="btn-primary" style="padding: 18px 40px; font-size: 1.1rem;">
+                        <i class="fa-solid fa-rocket"></i> Iniciar Meu Projeto
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer><div class="container"><div class="legal">&copy; 2025 Devcod Software Todos os direitos reservados.</div></div></footer>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="logo">Devcod<span>.Software</span></div>
+                    <p style="color:var(--text-muted); font-size:0.9rem; margin-top:20px;">Software House focada em resultados reais.</p>
+                </div>
+                <div class="footer-links">
+                    <h4 style="font-size:1rem;">Serviços</h4>
+                    <a href="mobile.html">Apps</a>
+                    <a href="web.html">Web</a>
+                    <a href="landing.html">Landing Pages</a>
+                </div>
+                <div>
+                    <h4 style="font-size:1rem;">Contato</h4>
+                    <p style="color:var(--text-muted); font-size:0.9rem;">(11) 96893-0203</p>
+                    <p style="color:var(--text-muted); font-size:0.9rem;">devcodext@gmail.com</p>
+                </div>
+            </div>
+            <div style="text-align:center; margin-top:50px; border-top:1px solid var(--border); padding-top:20px; font-size:0.8rem; color:var(--text-muted);">
+                &copy; 2025 Devcod Software. CNPJ: 51.419.528/0001-30
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
-
