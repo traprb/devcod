@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato & Orçamento | Devcod</title>
+    <title>Contato | Devcod</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -13,7 +13,6 @@
             <a href="index.html" class="logo"><i class="fa-solid fa-code"></i> Devcod<span>.Software</span></a>
             <nav class="nav-links">
                 <a href="index.html">Home</a>
-                <a href="portfolio.html">Portfolio</a>
                 <a href="suporte.html" class="active">Contato</a>
             </nav>
         </div>
@@ -22,62 +21,43 @@
     <main>
         <section class="page-hero">
             <div class="container">
-                <h1 class="hero-title">Vamos Escalar o seu <span class="text-gradient">Negócio?</span></h1>
-                <p class="hero-subtitle">Preencha o formulário para receber uma análise técnica gratuita do seu projeto. Nossa equipe responde em até 1 hora.</p>
+                <h1 class="hero-title">Fale Conosco</h1>
+                <p class="hero-subtitle">Estamos prontos para escalar seu negócio.</p>
             </div>
         </section>
 
         <section class="section-padding">
             <div class="container">
-                <div style="display:grid; grid-template-columns: 1fr 1.5fr; gap:50px;">
-                    <div>
-                        <h2>Canais Oficiais</h2>
-                        <p style="color:var(--text-muted); margin-bottom:30px;">Estamos prontos para atender demandas de alta complexidade.</p>
-                        
-                        <div class="bento-card">
-                            <ul style="font-size:1rem;">
-                                <li style="margin-bottom:20px; display:flex; align-items:center; gap:15px;">
-                                    <i class="fa-brands fa-whatsapp" style="color:#25D366; font-size:24px;"></i>
-                                    <div>
-                                        <div style="font-size:0.8rem; color:var(--text-muted);">WhatsApp Comercial</div>
-                                        <strong>(11) 96893-0203</strong>
-                                    </div>
-                                </li>
-                                <li style="margin-bottom:20px; display:flex; align-items:center; gap:15px;">
-                                    <i class="fa-solid fa-envelope" style="color:var(--primary); font-size:24px;"></i>
-                                    <div>
-                                        <div style="font-size:0.8rem; color:var(--text-muted);">Email Corporativo</div>
-                                        <strong>devcodext@gmail.com</strong>
-                                    </div>
-                                </li>
-                            </ul>
-                            <div style="margin-top:30px; border-top:1px solid var(--border); padding-top:20px;">
-                                <div style="font-size:0.8rem; color:var(--text-muted);">Dados da Empresa</div>
-                                <strong>CNPJ: 51.419.528/0001-30</strong>
-                            </div>
+                <div class="grid-2">
+                    <div class="bento-card">
+                        <h3>Canais Oficiais</h3>
+                        <ul style="margin-top:20px; font-size:1rem;">
+                            <li style="margin-bottom:20px; display:flex; align-items:center; gap:15px;">
+                                <i class="fa-brands fa-whatsapp" style="color:#25D366; font-size:24px;"></i>
+                                (11) 96893-0203
+                            </li>
+                            <li style="margin-bottom:20px; display:flex; align-items:center; gap:15px;">
+                                <i class="fa-solid fa-envelope" style="color:var(--primary); font-size:24px;"></i>
+                                devcodext@gmail.com
+                            </li>
+                        </ul>
+                        <div style="margin-top:20px; border-top:1px solid var(--border); padding-top:20px; font-size:0.8rem; color:var(--text-muted);">
+                            CNPJ: 51.419.528/0001-30
                         </div>
                     </div>
 
                     <div class="form-box">
                         <form id="whatsappForm">
-                            <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
-                                <input type="text" id="nome" class="form-control" placeholder="Nome do Responsável" required>
-                                <input type="text" id="empresa" class="form-control" placeholder="Nome da Empresa" required>
-                            </div>
+                            <input type="text" id="nome" class="form-control" placeholder="Seu Nome" required>
+                            <input type="text" id="empresa" class="form-control" placeholder="Nome da Empresa" required>
                             <select id="servico" class="form-control">
-                                <option value="" disabled selected>Qual sua necessidade?</option>
-                                <option>Desenvolvimento de App Mobile</option>
-                                <option>Sistema Web / Dashboard</option>
-                                <option>E-commerce / Loja Virtual</option>
-                                <option>Landing Page / Site</option>
-                                <option>Consultoria / Outros</option>
+                                <option>Desenvolvimento de App</option>
+                                <option>Sistema Web</option>
+                                <option>E-commerce</option>
+                                <option>Landing Page</option>
                             </select>
-                            <textarea id="mensagem" rows="5" class="form-control" placeholder="Descreva seu projeto com detalhes..." required></textarea>
-                            
-                            <button type="submit" class="btn-submit">
-                                <i class="fa-brands fa-whatsapp"></i> Enviar Solicitação Prioritária
-                            </button>
-                            <p style="text-align:center; font-size:0.8rem; color:var(--text-muted); margin-top:15px;">Ao enviar, você concorda com nossa política de privacidade.</p>
+                            <textarea id="mensagem" rows="4" class="form-control" placeholder="Mensagem..." required></textarea>
+                            <button type="submit" class="btn-submit">Enviar via WhatsApp</button>
                         </form>
                     </div>
                 </div>
