@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apps Mobile | Devcod</title>
+    <title>Desenvolvimento de Apps Mobile | Devcod</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -27,50 +27,217 @@
     <main>
         <section class="page-hero">
             <div class="container">
+                <div style="color:var(--accent); font-weight:700; letter-spacing:2px; text-transform:uppercase; font-size:0.8rem; margin-bottom:15px;">
+                    Mobile Engineering
+                </div>
                 <h1 class="hero-title">Apps que <span class="text-gradient">Dominam o Mercado</span></h1>
-                <p class="hero-subtitle">Desenvolvimento nativo para iOS e Android. Coloque sua marca no bolso do cliente com tecnologia de ponta.</p>
+                <p class="hero-subtitle">Não criamos apenas aplicativos, criamos negócios móveis. Desenvolvimento nativo para iOS e Android com foco em retenção, performance e escalabilidade.</p>
+                
+                <!-- Ícones de Plataforma -->
+                <div style="display:flex; justify-content:center; gap:30px; margin-top:40px; opacity:0.8; color:white;">
+                    <i class="fa-brands fa-apple fa-2x" title="iOS"></i>
+                    <i class="fa-brands fa-android fa-2x" title="Android"></i>
+                    <i class="fa-brands fa-react fa-2x" title="React Native"></i>
+                    <i class="fa-brands fa-google-play fa-2x" title="Google Play"></i>
+                    <i class="fa-brands fa-app-store-ios fa-2x" title="App Store"></i>
+                </div>
             </div>
         </section>
 
+        <!-- SEÇÃO: RECURSOS TÉCNICOS (EXPANDIDA) -->
         <section class="section-padding">
             <div class="container">
+                <h2 style="text-align:center; margin-bottom:10px;">Muito além do básico</h2>
+                <p style="text-align:center; color:var(--text-muted); margin-bottom:50px; max-width:700px; margin-left:auto; margin-right:auto;">
+                    Integramos o hardware do celular ao seu negócio. Usamos todos os sensores disponíveis para criar experiências imersivas.
+                </p>
+
                 <div class="bento-grid">
+                    <!-- CARD 1 -->
                     <div class="bento-card">
                         <div class="bento-icon"><i class="fa-brands fa-apple"></i></div>
-                        <h3>iOS Nativo</h3>
-                        <p style="color:var(--text-muted); font-size:0.9rem;">Design seguindo os padrões Apple. Aprovação garantida na App Store.</p>
+                        <h3>iOS Nativo & Híbrido</h3>
+                        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:15px;">
+                            Design System seguindo rigorosamente as diretrizes da Apple (Human Interface Guidelines) para garantir aprovação na loja.
+                        </p>
                     </div>
+
+                    <!-- CARD 2 -->
                     <div class="bento-card">
                         <div class="bento-icon"><i class="fa-brands fa-android"></i></div>
-                        <h3>Android</h3>
-                        <p style="color:var(--text-muted); font-size:0.9rem;">Compatível com milhares de dispositivos. Performance extrema.</p>
+                        <h3>Android Enterprise</h3>
+                        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:15px;">
+                            Compatibilidade com milhares de dispositivos. Otimização de bateria e memória para rodar liso em qualquer aparelho.
+                        </p>
                     </div>
+
+                    <!-- CARD 3 -->
+                    <div class="bento-card">
+                        <div class="bento-icon"><i class="fa-solid fa-fingerprint"></i></div>
+                        <h3>Segurança Biométrica</h3>
+                        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:15px;">
+                            Login instantâneo usando FaceID ou Digital. Proteção de dados sensíveis com criptografia de ponta a ponta.
+                        </p>
+                    </div>
+
+                    <!-- CARD 4 -->
+                    <div class="bento-card">
+                        <div class="bento-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                        <h3>Geolocalização (GPS)</h3>
+                        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:15px;">
+                            Rastreamento em tempo real (estilo Uber/iFood), mapas interativos e cercas virtuais para o seu negócio.
+                        </p>
+                    </div>
+
+                    <!-- CARD 5 -->
                     <div class="bento-card">
                         <div class="bento-icon"><i class="fa-solid fa-bell"></i></div>
-                        <h3>Push Notification</h3>
-                        <p style="color:var(--text-muted); font-size:0.9rem;">Engaje seus clientes com notificações diretas na tela bloqueada.</p>
+                        <h3>Push Notifications</h3>
+                        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:15px;">
+                            Envie alertas direto para a tela bloqueada do cliente. Taxa de abertura 5x maior que e-mail marketing.
+                        </p>
+                    </div>
+
+                    <!-- CARD 6 -->
+                    <div class="bento-card">
+                        <div class="bento-icon"><i class="fa-solid fa-wallet"></i></div>
+                        <h3>Monetização In-App</h3>
+                        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:15px;">
+                            Venda assinaturas, produtos digitais ou integre gateways de pagamento (Cartão/PIX) direto no aplicativo.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- SEÇÃO: O PROCESSO DE DESENVOLVIMENTO -->
         <section class="section-padding" style="background: rgba(0,0,0,0.3);">
             <div class="container">
-                <h2 style="margin-bottom:30px;">Dúvidas Comuns</h2>
-                <div class="faq-item">
-                    <div class="faq-question">Vocês publicam nas lojas? <i class="fa-solid fa-chevron-down"></i></div>
-                    <div class="faq-answer">Sim, cuidamos de todo o processo burocrático nas lojas da Apple e Google.</div>
+                <div class="grid-2">
+                    <div>
+                        <h2 style="font-size:2.2rem; line-height:1.2;">Como seu App nasce?</h2>
+                        <p style="color:var(--text-muted); margin-bottom:30px;">
+                            Não começamos programando. Começamos entendendo. Nosso processo garante que o produto final resolva o problema do usuário.
+                        </p>
+                        
+                        <ul class="feature-list" style="display:flex; flex-direction:column; gap:20px;">
+                            <li style="background:var(--bg-card); padding:15px; border-radius:10px; border:1px solid var(--border);">
+                                <div style="display:flex; gap:15px; align-items:center;">
+                                    <span style="font-size:1.5rem; font-weight:800; color:var(--text-muted); opacity:0.3;">01</span>
+                                    <div>
+                                        <strong style="display:block; color:white;">Discovery & UX</strong>
+                                        <span style="font-size:0.85rem;">Mapeamento de jornada e Wireframes.</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li style="background:var(--bg-card); padding:15px; border-radius:10px; border:1px solid var(--border);">
+                                <div style="display:flex; gap:15px; align-items:center;">
+                                    <span style="font-size:1.5rem; font-weight:800; color:var(--text-muted); opacity:0.3;">02</span>
+                                    <div>
+                                        <strong style="display:block; color:white;">UI Design High-Fidelity</strong>
+                                        <span style="font-size:0.85rem;">Layout final fiel à marca.</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li style="background:var(--bg-card); padding:15px; border-radius:10px; border:1px solid var(--border);">
+                                <div style="display:flex; gap:15px; align-items:center;">
+                                    <span style="font-size:1.5rem; font-weight:800; color:var(--text-muted); opacity:0.3;">03</span>
+                                    <div>
+                                        <strong style="display:block; color:white;">Development & QA</strong>
+                                        <span style="font-size:0.85rem;">Código limpo e testes em múltiplos aparelhos.</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li style="background:var(--bg-card); padding:15px; border-radius:10px; border:1px solid var(--border);">
+                                <div style="display:flex; gap:15px; align-items:center;">
+                                    <span style="font-size:1.5rem; font-weight:800; color:var(--primary);">04</span>
+                                    <div>
+                                        <strong style="display:block; color:var(--primary);">Launch (Lançamento)</strong>
+                                        <span style="font-size:0.85rem;">Publicação na Apple Store e Google Play.</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- CARD DE DESTAQUE LATERAL -->
+                    <div class="bento-card" style="display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; min-height:400px; border:1px dashed var(--primary);">
+                        <i class="fa-solid fa-rocket" style="font-size:80px; color:var(--bg-card-hover); margin-bottom:30px;"></i>
+                        <h3>Painel Administrativo Incluso</h3>
+                        <p style="color:var(--text-muted); font-size:0.9rem; max-width:300px; margin:0 auto;">
+                            Você não precisa entender de código para gerenciar seu app. Entregamos um painel web para você controlar usuários, vendas e conteúdo.
+                        </p>
+                        <a href="web.html" style="margin-top:20px; color:var(--success); font-weight:700; font-size:0.9rem;">Ver sobre o Painel &rarr;</a>
+                    </div>
                 </div>
-                <div class="faq-item">
-                    <div class="faq-question">Tem painel administrativo? <i class="fa-solid fa-chevron-down"></i></div>
-                    <div class="faq-answer">Sim, entregamos um painel web onde você controla usuários, vendas e conteúdo do app.</div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: FAQ -->
+        <section class="section-padding">
+            <div class="container">
+                <h2 style="text-align:center; margin-bottom:40px;">Perguntas Frequentes</h2>
+                <div class="bento-grid" style="grid-template-columns: 1fr; max-width: 800px; margin: 0 auto;">
+                    <div class="faq-item">
+                        <div class="faq-question">Vocês publicam nas lojas (Apple e Google)? <i class="fa-solid fa-chevron-down"></i></div>
+                        <div class="faq-answer">Sim. Cuidamos de todo o processo burocrático: criação das contas de desenvolvedor, configuração de certificados, preenchimento de formulários de privacidade e submissão para análise.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">O aplicativo funciona offline? <i class="fa-solid fa-chevron-down"></i></div>
+                        <div class="faq-answer">Depende da funcionalidade. Podemos desenvolver arquiteturas "Offline-First", onde o usuário navega e salva dados no aparelho, e o app sincroniza com a nuvem assim que a internet voltar.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Quanto tempo leva para criar um App? <i class="fa-solid fa-chevron-down"></i></div>
+                        <div class="faq-answer">Um MVP (Mínimo Produto Viável) leva em média 30 a 45 dias. Projetos complexos (como Uber ou iFood) podem levar de 3 a 6 meses. Entregamos um cronograma detalhado antes de começar.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Quais tecnologias vocês usam? <i class="fa-solid fa-chevron-down"></i></div>
+                        <div class="faq-answer">Utilizamos as melhores do mercado: Flutter (Google) e React Native (Facebook) para desenvolvimento híbrido de alta performance, ou Swift e Kotlin para nativo puro, dependendo da necessidade do projeto.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA FINAL -->
+        <section class="section-padding" style="background: linear-gradient(180deg, var(--bg-dark) 0%, #1e1b4b 100%); border-top: 1px solid var(--border);">
+            <div class="container" style="text-align:center;">
+                <h2 style="font-size:2.5rem; margin-bottom:20px;">Tire sua ideia do papel</h2>
+                <p style="color:var(--text-muted); font-size:1.1rem; max-width:600px; margin:0 auto 40px auto;">
+                    Agende uma consultoria técnica gratuita e descubra a viabilidade do seu aplicativo.
+                </p>
+                <div style="display:flex; justify-content:center; gap:20px;">
+                    <a href="suporte.html" class="btn-primary" style="padding: 18px 40px; font-size: 1.1rem;">
+                        <i class="fa-solid fa-mobile-screen-button"></i> Iniciar Projeto Mobile
+                    </a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer><div class="container"><div class="legal">&copy; 2025 Devcod Software Todos os direitos reservados.</div></div></footer>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="logo">Devcod<span>.Software</span></div>
+                    <p style="color:var(--text-muted); font-size:0.9rem; margin-top:20px;">Engenharia de software mobile de ponta a ponta.</p>
+                </div>
+                <div class="footer-links">
+                    <h4 style="font-size:1rem;">Links</h4>
+                    <a href="web.html">Sistemas Web</a>
+                    <a href="ecommerce.html">E-commerce</a>
+                    <a href="suporte.html">Orçamento</a>
+                </div>
+                <div>
+                    <h4 style="font-size:1rem;">Contato</h4>
+                    <p style="color:var(--text-muted); font-size:0.9rem;">(11) 96893-0203</p>
+                    <p style="color:var(--text-muted); font-size:0.9rem;">devcodext@gmail.com</p>
+                </div>
+            </div>
+            <div style="text-align:center; margin-top:50px; border-top:1px solid var(--border); padding-top:20px; font-size:0.8rem; color:var(--text-muted);">
+                &copy; 2025 Devcod Software. CNPJ: 51.419.528/0001-30
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
-
