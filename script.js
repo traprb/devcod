@@ -1,7 +1,7 @@
-// script.js - Enterprise Logic
+// script.js - Lógica Devcod
 document.addEventListener('DOMContentLoaded', () => {
     
-    // 1. Animação de Scroll
+    // 1. Animação de Scroll Suave
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if(entry.isIntersecting) {
@@ -9,20 +9,25 @@ document.addEventListener('DOMContentLoaded', () => {
                 entry.target.style.transform = 'translateY(0)';
             }
         });
-    });
+    }, { threshold: 0.1 }); // Dispara quando 10% do item aparece
 
-    document.querySelectorAll('.bento-card, h1, h2, li').forEach((el) => {
+    const elements = document.querySelectorAll('.bento-card, .hero-title, .hero-subtitle, li, .faq-item');
+    elements.forEach((el) => {
         el.style.opacity = 0;
         el.style.transform = 'translateY(20px)';
         el.style.transition = 'all 0.5s ease-out';
         observer.observe(el);
     });
 
-    // 2. Lógica do FAQ (Accordion)
+    // 2. FAQ Accordion
     const faqs = document.querySelectorAll('.faq-question');
     faqs.forEach(faq => {
         faq.addEventListener('click', () => {
             const item = faq.parentElement;
+            // Fecha outros abertos (opcional, para mobile é bom)
+            document.querySelectorAll('.faq-item').forEach(i => {
+                if(i !== item) i.classList.remove('active');
+            });
             item.classList.toggle('active');
         });
     });
