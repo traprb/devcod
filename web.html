@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistemas Web | Devcod</title>
+    <title>Sistemas Web & Dashboards | Devcod</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -13,6 +13,7 @@
             <a href="index.html" class="logo"><i class="fa-solid fa-code"></i> Devcod<span>.Software</span></a>
             <nav class="nav-links">
                 <a href="index.html">Home</a>
+                <a href="mobile.html">Mobile</a>
                 <a href="web.html" class="active">Web</a>
                 <a href="landing.html">Landing</a>
                 <a href="portfolio.html">Portfolio</a>
@@ -25,34 +26,213 @@
     <main>
         <section class="page-hero">
             <div class="container">
+                <div style="color:var(--accent); font-weight:700; letter-spacing:2px; text-transform:uppercase; font-size:0.8rem; margin-bottom:15px;">
+                    Enterprise Web Solutions
+                </div>
                 <h1 class="hero-title">Sistemas de <span class="text-gradient">Alta Complexidade</span></h1>
-                <p class="hero-subtitle">Dashboards, CRMs e ERPs na nuvem. Automatize sua empresa com segurança e escala.</p>
+                <p class="hero-subtitle">Abandone as planilhas lentas. Tenha Dashboards, CRMs e ERPs na nuvem. Automatize sua empresa com segurança bancária e escala global.</p>
             </div>
         </section>
 
+        <!-- SEÇÃO PRINCIPAL: O PROBLEMA VS SOLUÇÃO -->
         <section class="section-padding">
             <div class="container">
                 <div class="grid-2">
                     <div>
-                        <h2>O fim das planilhas manuais</h2>
-                        <p style="color:var(--text-muted); margin-bottom:20px;">Centralize sua operação em um sistema web seguro e acessível de qualquer lugar.</p>
-                        <ul class="feature-list">
-                            <li><i class="fa-solid fa-check"></i> Controle de Estoque e Vendas</li>
-                            <li><i class="fa-solid fa-check"></i> Gestão Financeira e Boletos</li>
-                            <li><i class="fa-solid fa-check"></i> Relatórios em Tempo Real</li>
-                            <li><i class="fa-solid fa-check"></i> Hospedagem em Nuvem (AWS)</li>
+                        <h2 style="font-size: 2.5rem; line-height: 1.2;">O fim das planilhas manuais e inseguras</h2>
+                        <p style="color:var(--text-muted); margin-bottom:20px; font-size: 1.1rem; margin-top: 20px;">
+                            Empresas líderes não gerenciam milhões no Excel. Centralize sua operação em um sistema web seguro, acessível de qualquer lugar e com backups automáticos.
+                        </p>
+                        <ul class="feature-list" style="margin-top: 30px;">
+                            <li style="font-size: 1.1rem;"><i class="fa-solid fa-check-circle"></i> <strong>Centralização:</strong> Adeus arquivos duplicados.</li>
+                            <li style="font-size: 1.1rem;"><i class="fa-solid fa-check-circle"></i> <strong>Permissões:</strong> Você define quem vê o quê.</li>
+                            <li style="font-size: 1.1rem;"><i class="fa-solid fa-check-circle"></i> <strong>Automação:</strong> Cálculos e relatórios prontos em 1 clique.</li>
+                            <li style="font-size: 1.1rem;"><i class="fa-solid fa-check-circle"></i> <strong>Acesso Remoto:</strong> Controle a empresa pelo celular.</li>
                         </ul>
                     </div>
-                    <div class="bento-card" style="min-height:300px; display:flex; align-items:center; justify-content:center;">
-                        <i class="fa-solid fa-server" style="font-size:80px; color:var(--bg-card-hover);"></i>
+                    
+                    <!-- SIMULAÇÃO VISUAL DE DASHBOARD (FEITO COM CSS PARA PERFORMANCE) -->
+                    <div class="bento-card" style="padding: 0; overflow: hidden; min-height: 350px; background: #0f172a; border: 1px solid var(--border);">
+                        <!-- Barra Superior do Sistema Fictício -->
+                        <div style="background: #1e293b; padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; gap: 10px;">
+                            <div style="width: 12px; height: 12px; border-radius: 50%; background: #ef4444;"></div>
+                            <div style="width: 12px; height: 12px; border-radius: 50%; background: #eab308;"></div>
+                            <div style="width: 12px; height: 12px; border-radius: 50%; background: #22c55e;"></div>
+                            <div style="margin-left: auto; font-size: 0.8rem; color: var(--text-muted);">Admin Panel v2.0</div>
+                        </div>
+                        
+                        <!-- Conteúdo do Dashboard Fictício -->
+                        <div style="padding: 25px; display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                            <!-- Widget 1 -->
+                            <div style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 10px;">
+                                <div style="font-size: 0.8rem; color: var(--text-muted);">Receita Mensal</div>
+                                <div style="font-size: 1.5rem; font-weight: 700; color: var(--success); margin: 5px 0;">R$ 145.200</div>
+                                <div style="height: 4px; background: rgba(255,255,255,0.1); border-radius: 2px; margin-top: 10px;">
+                                    <div style="width: 70%; height: 100%; background: var(--success); border-radius: 2px;"></div>
+                                </div>
+                            </div>
+                            <!-- Widget 2 -->
+                            <div style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 10px;">
+                                <div style="font-size: 0.8rem; color: var(--text-muted);">Novos Leads</div>
+                                <div style="font-size: 1.5rem; font-weight: 700; color: var(--primary); margin: 5px 0;">+324</div>
+                                <div style="display: flex; gap: 3px; align-items: flex-end; height: 15px; margin-top: 10px;">
+                                    <div style="width: 20%; height: 40%; background: var(--primary);"></div>
+                                    <div style="width: 20%; height: 70%; background: var(--primary);"></div>
+                                    <div style="width: 20%; height: 50%; background: var(--primary);"></div>
+                                    <div style="width: 20%; height: 100%; background: var(--primary);"></div>
+                                </div>
+                            </div>
+                            <!-- Widget 3 (Largo) -->
+                            <div style="grid-column: span 2; background: rgba(255,255,255,0.05); padding: 15px; border-radius: 10px; display: flex; align-items: center; justify-content: space-between;">
+                                <div>
+                                    <div style="font-size: 0.8rem; color: var(--text-muted);">Status do Servidor</div>
+                                    <div style="color: var(--success); font-weight: 600; font-size: 0.9rem;"><i class="fa-solid fa-circle-check"></i> 100% Online</div>
+                                </div>
+                                <i class="fa-solid fa-server" style="font-size: 24px; opacity: 0.3;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE MÓDULOS (CARDS DETALHADOS) -->
+        <section class="section-padding" style="background: rgba(0,0,0,0.2);">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 10px;">Módulos que Desenvolvemos</h2>
+                <p style="text-align: center; color: var(--text-muted); margin-bottom: 50px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Substituímos suas planilhas por interfaces intuitivas. Cada sistema é feito sob medida para o fluxo da sua empresa.
+                </p>
+
+                <div class="bento-grid">
+                    <!-- CARD 1: FINANCEIRO -->
+                    <div class="bento-card">
+                        <div class="bento-icon"><i class="fa-solid fa-chart-pie"></i></div>
+                        <h3>Dashboard Financeiro</h3>
+                        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom: 15px;">
+                            Substitua o "Controle_Final_v2.xlsx". Tenha fluxo de caixa, DRE e conciliação bancária automática.
+                        </p>
+                        <ul class="feature-list">
+                            <li><i class="fa-solid fa-check"></i> Emissão de Boletos e NFs</li>
+                            <li><i class="fa-solid fa-check"></i> Contas a Pagar/Receber</li>
+                            <li><i class="fa-solid fa-check"></i> Alertas de Vencimento</li>
+                        </ul>
+                    </div>
+
+                    <!-- CARD 2: CRM -->
+                    <div class="bento-card">
+                        <div class="bento-icon"><i class="fa-solid fa-users-gear"></i></div>
+                        <h3>CRM & Gestão de Leads</h3>
+                        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom: 15px;">
+                            Organize seu funil de vendas. Saiba exatamente em qual etapa cada cliente está e nunca mais perca uma venda.
+                        </p>
+                        <ul class="feature-list">
+                            <li><i class="fa-solid fa-check"></i> Pipeline estilo Kanban</li>
+                            <li><i class="fa-solid fa-check"></i> Histórico de Conversas</li>
+                            <li><i class="fa-solid fa-check"></i> Automação de Follow-up</li>
+                        </ul>
+                    </div>
+
+                    <!-- CARD 3: ESTOQUE -->
+                    <div class="bento-card">
+                        <div class="bento-icon"><i class="fa-solid fa-boxes-stacked"></i></div>
+                        <h3>Controle de Estoque</h3>
+                        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom: 15px;">
+                            Evite furos no estoque. O sistema dá baixa automática na venda e avisa quando precisa repor produtos.
+                        </p>
+                        <ul class="feature-list">
+                            <li><i class="fa-solid fa-check"></i> Entrada via XML/Nota</li>
+                            <li><i class="fa-solid fa-check"></i> Gestão de Múltiplos Depósitos</li>
+                            <li><i class="fa-solid fa-check"></i> Curva ABC de Produtos</li>
+                        </ul>
+                    </div>
+
+                    <!-- CARD 4: RELATÓRIOS -->
+                    <div class="bento-card">
+                        <div class="bento-icon"><i class="fa-solid fa-file-pdf"></i></div>
+                        <h3>Relatórios Inteligentes</h3>
+                        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom: 15px;">
+                            Transforme dados em gráficos visuais. Exporte PDFs gerenciais para reuniões com um único clique.
+                        </p>
+                        <ul class="feature-list">
+                            <li><i class="fa-solid fa-check"></i> Exportação PDF/Excel</li>
+                            <li><i class="fa-solid fa-check"></i> Gráficos de Desempenho</li>
+                            <li><i class="fa-solid fa-check"></i> Auditoria de Acessos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO TÉCNICA (PERFORMANCE E SEGURANÇA) -->
+        <section class="section-padding" style="background: #000;">
+            <div class="container">
+                <div class="grid-2">
+                    <div class="bento-card" style="border: 1px solid var(--primary);">
+                        <h3 style="margin-bottom: 20px;">Infraestrutura Enterprise</h3>
+                        <div style="display: flex; flex-direction: column; gap: 20px;">
+                            <div style="display: flex; gap: 15px;">
+                                <i class="fa-brands fa-aws" style="font-size: 30px; color: var(--text-muted);"></i>
+                                <div>
+                                    <h4 style="font-size: 1rem; margin: 0;">Servidores AWS/Google</h4>
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Escalabilidade automática. Seus acessos sobem, o servidor aguenta.</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 15px;">
+                                <i class="fa-solid fa-shield-cat" style="font-size: 30px; color: var(--text-muted);"></i>
+                                <div>
+                                    <h4 style="font-size: 1rem; margin: 0;">Segurança Bancária</h4>
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Criptografia SSL de ponta a ponta e backups diários em 3 locais.</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 15px;">
+                                <i class="fa-brands fa-node-js" style="font-size: 30px; color: var(--text-muted);"></i>
+                                <div>
+                                    <h4 style="font-size: 1rem; margin: 0;">Código Moderno</h4>
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">React.js e Node.js. A mesma tecnologia usada por Uber e Netflix.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="text-align: left;">
+                        <h2 style="font-size: 2.2rem;">Por que investir agora?</h2>
+                        <p style="color: var(--text-muted); margin-bottom: 30px;">
+                            Cada minuto gasto atualizando planilhas manualmente é dinheiro perdido. Nossos sistemas se pagam em média em 3 meses, apenas com a redução de erros e ganho de produtividade.
+                        </p>
+                        <a href="suporte.html" class="btn-primary" style="width: 100%;">
+                            Solicitar Demonstração Gratuita <i class="fa-solid fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer><div class="container"><div class="legal">&copy; 2025 Devcod Software Todos os direitos reservados.</div></div></footer>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="logo">Devcod<span>.Software</span></div>
+                    <p style="color:var(--text-muted); font-size:0.9rem; margin-top:20px;">Transformando empresas com inteligência de dados.</p>
+                </div>
+                <div class="footer-links">
+                    <h4 style="font-size:1rem;">Links Rápidos</h4>
+                    <a href="mobile.html">Apps Mobile</a>
+                    <a href="web.html">Sistemas Web</a>
+                    <a href="suporte.html">Orçamento</a>
+                </div>
+                <div>
+                    <h4 style="font-size:1rem;">Contato</h4>
+                    <p style="color:var(--text-muted); font-size:0.9rem;">(11) 96893-0203</p>
+                    <p style="color:var(--text-muted); font-size:0.9rem;">devcodext@gmail.com</p>
+                </div>
+            </div>
+            <div style="text-align:center; margin-top:50px; border-top:1px solid var(--border); padding-top:20px; font-size:0.8rem; color:var(--text-muted);">
+                &copy; 2025 Devcod Software. CNPJ: 51.419.528/0001-30
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
-
