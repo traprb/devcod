@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-commerce | Devcod</title>
+    <title>E-commerce & Lojas Virtuais | Devcod</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -13,6 +13,9 @@
             <a href="index.html" class="logo"><i class="fa-solid fa-code"></i> Devcod<span>.Software</span></a>
             <nav class="nav-links">
                 <a href="index.html">Home</a>
+                <a href="mobile.html">Mobile</a>
+                <a href="web.html">Web</a>
+                <a href="landing.html">Landing</a>
                 <a href="ecommerce.html" class="active">E-commerce</a>
                 <a href="portfolio.html">Portfolio</a>
                 <a href="suporte.html">Contato</a>
@@ -24,34 +27,211 @@
     <main>
         <section class="page-hero">
             <div class="container">
-                <h1 class="hero-title">Sua Loja Aberta para o <span class="text-gradient">Mundo</span></h1>
-                <p class="hero-subtitle">Venda produtos físicos ou digitais com pagamento automático e cálculo de frete integrado.</p>
+                <div style="color:var(--accent); font-weight:700; letter-spacing:2px; text-transform:uppercase; font-size:0.8rem; margin-bottom:15px;">
+                    Retail & Digital Sales
+                </div>
+                <h1 class="hero-title">Sua Loja Aberta para o <span class="text-gradient">Mundo (24/7)</span></h1>
+                <p class="hero-subtitle">Plataformas de vendas robustas, seguras e integradas. Venda produtos físicos ou digitais com checkout transparente e cálculo de frete automático.</p>
+                
+                <!-- Ícones de Confiança -->
+                <div style="display:flex; justify-content:center; gap:25px; margin-top:40px; opacity:0.7;">
+                    <i class="fa-brands fa-cc-visa fa-2x" title="Visa"></i>
+                    <i class="fa-brands fa-cc-mastercard fa-2x" title="Mastercard"></i>
+                    <i class="fa-brands fa-pix fa-2x" title="PIX"></i>
+                    <i class="fa-solid fa-truck-fast fa-2x" title="Correios/Logística"></i>
+                    <i class="fa-brands fa-instagram fa-2x" title="Instagram Shopping"></i>
+                </div>
             </div>
         </section>
 
+        <!-- SEÇÃO: INFRAESTRUTURA DE VENDAS -->
         <section class="section-padding">
             <div class="container">
+                <div class="grid-2">
+                    <div>
+                        <h2 style="font-size:2.5rem; line-height:1.2; margin-bottom:20px;">Não é só uma loja.<br>É um ecossistema.</h2>
+                        <p style="color:var(--text-muted); font-size:1.1rem; margin-bottom:30px;">
+                            Esqueça plataformas lentas e taxas abusivas. Desenvolvemos sua loja própria, onde você tem controle total dos dados, clientes e lucro.
+                        </p>
+                        
+                        <div class="bento-grid" style="grid-template-columns: 1fr; gap: 15px;">
+                            <div style="display:flex; gap:15px; align-items:start;">
+                                <div style="background:rgba(59,130,246,0.1); padding:10px; border-radius:10px;"><i class="fa-solid fa-money-bill-transfer" style="color:var(--primary);"></i></div>
+                                <div>
+                                    <h4 style="margin:0; font-size:1rem;">Checkout Transparente</h4>
+                                    <p style="font-size:0.85rem; color:var(--text-muted);">O cliente paga sem sair do site (Mercado Pago, Pagar.me, Stripe).</p>
+                                </div>
+                            </div>
+                            <div style="display:flex; gap:15px; align-items:start;">
+                                <div style="background:rgba(16,185,129,0.1); padding:10px; border-radius:10px;"><i class="fa-solid fa-truck" style="color:var(--success);"></i></div>
+                                <div>
+                                    <h4 style="margin:0; font-size:1rem;">Logística Automatizada</h4>
+                                    <p style="font-size:0.85rem; color:var(--text-muted);">Cálculo de frete em tempo real (Correios, Melhor Envio, Jadlog).</p>
+                                </div>
+                            </div>
+                            <div style="display:flex; gap:15px; align-items:start;">
+                                <div style="background:rgba(139,92,246,0.1); padding:10px; border-radius:10px;"><i class="fa-solid fa-bullhorn" style="color:var(--accent);"></i></div>
+                                <div>
+                                    <h4 style="margin:0; font-size:1rem;">Marketing Integrado</h4>
+                                    <p style="font-size:0.85rem; color:var(--text-muted);">Integração com Instagram Shopping, Google Shopping e Pixel do Facebook.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SIMULAÇÃO VISUAL DE PAINEL DE VENDAS -->
+                    <div class="bento-card" style="padding:0; overflow:hidden; border:1px solid var(--border); background:#0f172a; min-height:400px;">
+                        <div style="padding:20px; border-bottom:1px solid var(--border); background:#1e293b; display:flex; justify-content:space-between;">
+                            <span style="font-weight:700; font-size:0.9rem;">Painel do Lojista</span>
+                            <span style="color:var(--success); font-size:0.8rem;"><i class="fa-solid fa-circle"></i> Vendas ao Vivo</span>
+                        </div>
+                        <div style="padding:30px;">
+                            <!-- Gráfico Simulado -->
+                            <div style="display:flex; justify-content:space-between; align-items:flex-end; height:100px; margin-bottom:30px; gap:10px;">
+                                <div style="width:100%; height:40%; background:var(--primary); opacity:0.3; border-radius:4px;"></div>
+                                <div style="width:100%; height:60%; background:var(--primary); opacity:0.5; border-radius:4px;"></div>
+                                <div style="width:100%; height:30%; background:var(--primary); opacity:0.3; border-radius:4px;"></div>
+                                <div style="width:100%; height:80%; background:var(--primary); opacity:0.8; border-radius:4px;"></div>
+                                <div style="width:100%; height:50%; background:var(--primary); opacity:0.4; border-radius:4px;"></div>
+                                <div style="width:100%; height:90%; background:var(--success); border-radius:4px; box-shadow:0 0 15px var(--success);"></div>
+                            </div>
+                            
+                            <!-- Lista de Pedidos Simulada -->
+                            <div style="display:flex; justify-content:space-between; margin-bottom:15px; border-bottom:1px solid var(--border); padding-bottom:10px;">
+                                <div style="display:flex; gap:10px; align-items:center;">
+                                    <div style="width:30px; height:30px; background:#fff; border-radius:50%;"></div>
+                                    <div>
+                                        <div style="font-size:0.8rem; font-weight:700;">Pedido #8902</div>
+                                        <div style="font-size:0.7rem; color:var(--text-muted);">Há 2 min</div>
+                                    </div>
+                                </div>
+                                <div style="text-align:right;">
+                                    <div style="font-size:0.9rem; color:var(--success);">+ R$ 249,90</div>
+                                    <div style="font-size:0.7rem; color:var(--text-muted);">PIX</div>
+                                </div>
+                            </div>
+                            <div style="display:flex; justify-content:space-between; margin-bottom:15px;">
+                                <div style="display:flex; gap:10px; align-items:center;">
+                                    <div style="width:30px; height:30px; background:#ccc; border-radius:50%;"></div>
+                                    <div>
+                                        <div style="font-size:0.8rem; font-weight:700;">Pedido #8901</div>
+                                        <div style="font-size:0.7rem; color:var(--text-muted);">Há 15 min</div>
+                                    </div>
+                                </div>
+                                <div style="text-align:right;">
+                                    <div style="font-size:0.9rem; color:var(--success);">+ R$ 1.120,00</div>
+                                    <div style="font-size:0.7rem; color:var(--text-muted);">Cartão 3x</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: RECURSOS DETALHADOS -->
+        <section class="section-padding" style="background: rgba(0,0,0,0.3);">
+            <div class="container">
+                <h2 style="text-align:center; margin-bottom:50px;">Tudo o que sua loja precisa</h2>
+                
                 <div class="bento-grid">
+                    <!-- Card 1 -->
                     <div class="bento-card">
-                        <h3>Pagamento Automático</h3>
-                        <p style="color:var(--text-muted); font-size:0.9rem;">PIX, Cartão e Boleto (Mercado Pago, Stripe).</p>
+                        <div class="bento-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                        <h3>Mobile First</h3>
+                        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:15px;">
+                            Layout 100% adaptado para celulares. Seus clientes compram com facilidade usando apenas o polegar.
+                        </p>
                     </div>
+
+                    <!-- Card 2 -->
                     <div class="bento-card">
-                        <h3>Frete Inteligente</h3>
-                        <p style="color:var(--text-muted); font-size:0.9rem;">Integração com Correios e Melhor Envio.</p>
+                        <div class="bento-icon"><i class="fa-solid fa-ticket"></i></div>
+                        <h3>Gestão de Ofertas</h3>
+                        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:15px;">
+                            Crie cupons de desconto, ofertas relâmpago, frete grátis por região e promoções de "leve 3 pague 2".
+                        </p>
                     </div>
+
+                    <!-- Card 3 -->
                     <div class="bento-card">
-                        <h3>Segurança SSL</h3>
-                        <p style="color:var(--text-muted); font-size:0.9rem;">Proteção de dados e antifraude incluídos.</p>
+                        <div class="bento-icon"><i class="fa-solid fa-rotate-left"></i></div>
+                        <h3>Recuperação de Carrinho</h3>
+                        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:15px;">
+                            Ferramentas automáticas para enviar e-mail ou WhatsApp para quem desistiu da compra no checkout.
+                        </p>
                     </div>
+
+                    <!-- Card 4 -->
+                    <div class="bento-card">
+                        <div class="bento-icon"><i class="fa-solid fa-boxes-stacked"></i></div>
+                        <h3>Controle de Estoque</h3>
+                        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:15px;">
+                            Baixa automática de produtos. Venda variações (P, M, G ou Cores) com controle individual de saldo.
+                        </p>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="bento-card">
+                        <div class="bento-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h3>Segurança Máxima</h3>
+                        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:15px;">
+                            Certificado SSL (Cadeado Verde), Proteção DDoS e conformidade total com a Lei de Proteção de Dados (LGPD).
+                        </p>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="bento-card">
+                        <div class="bento-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                        <h3>Botão WhatsApp</h3>
+                        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:15px;">
+                            Botão flutuante para tirar dúvidas em tempo real, aumentando drasticamente a taxa de conversão.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA FINAL -->
+        <section class="section-padding" style="background: linear-gradient(180deg, var(--bg-dark) 0%, #1e1b4b 100%); border-top: 1px solid var(--border);">
+            <div class="container" style="text-align:center;">
+                <h2 style="font-size:2.5rem; margin-bottom:20px;">Pronto para vender online?</h2>
+                <p style="color:var(--text-muted); font-size:1.1rem; max-width:600px; margin:0 auto 40px auto;">
+                    Entregamos sua loja configurada, com produtos cadastrados e pronta para faturar.
+                </p>
+                <div style="display:flex; justify-content:center; gap:20px;">
+                    <a href="suporte.html" class="btn-primary" style="padding: 18px 40px; font-size: 1.1rem;">
+                        <i class="fa-solid fa-store"></i> Solicitar Orçamento da Loja
+                    </a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer><div class="container"><div class="legal">&copy; 2025 Devcod Software Todos os direitos reservados.</div></div></footer>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="logo">Devcod<span>.Software</span></div>
+                    <p style="color:var(--text-muted); font-size:0.9rem; margin-top:20px;">Especialistas em e-commerce de alta conversão.</p>
+                </div>
+                <div class="footer-links">
+                    <h4 style="font-size:1rem;">Serviços</h4>
+                    <a href="mobile.html">Apps Mobile</a>
+                    <a href="web.html">Sistemas Web</a>
+                    <a href="landing.html">Landing Pages</a>
+                </div>
+                <div>
+                    <h4 style="font-size:1rem;">Contato</h4>
+                    <p style="color:var(--text-muted); font-size:0.9rem;">(11) 96893-0203</p>
+                    <p style="color:var(--text-muted); font-size:0.9rem;">devcodext@gmail.com</p>
+                </div>
+            </div>
+            <div style="text-align:center; margin-top:50px; border-top:1px solid var(--border); padding-top:20px; font-size:0.8rem; color:var(--text-muted);">
+                &copy; 2025 Devcod Software. CNPJ: 51.419.528/0001-30
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
-
-
